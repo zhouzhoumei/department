@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>学前教育专业</title>
+        <link href="css/style1.css" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+<div class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="header-logo">
+            <!--此处加logo-->
+            <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="navbar-header">
+        </div>
+        <div class="top-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="index.html"><p>首页</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>系部概况</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="general.html">系部简介</a></li>
+                        <li><a href="xbhj.html">系部环境</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>专业设置</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="xlzy.html">应用心理学专业</a></li>
+                        <li><a href="xqjy.html">学前教育专业</a></li>
+                    </ul>
+                </li>
+                <li><a href="teacher.html"><p>师资队伍</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>党建工作</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.dangjian.cn/">党建网</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>招生就业</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="zsqk.html">招生情况</a></li>
+                        <li><a href="jyfx.html">就业方向</a></li>
+                        <li><a href="https://zsjyc.llu.edu.cn/zssy/sy.htm">招生信息网</a></li>
+                        <li><a href="https://llu.jysd.com/">就业信息网</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="list_bt">
+    <div class="lmmc">专业设置</div>
+    <div class="dqwz">当前位置:
+        <a>首页</a>
+        >>
+        <a>教育系</a>
+        >>
+        <a>学前教育</a>
+    </div>
+</div>
+</div>
+<div class="list">
+    <div class="left"><script type="text/javascript">
+        $(function(){
+            $('.menuList').click(function(){
+                if($(this).find('.secondDiv').css('display')=='block'){
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideUp();
+                }
+                else{
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideDown();
+                    $(this).siblings().find('.secondDiv').slideUp();
+                }
+
+            })
+        })
+    </script>
+        <style type="text/css">
+            .menuList{ width:240px; height:auto; clear:both;}
+            .menuList h5{  line-height:55px;  display:block;  font-size:16px;background:#ffffff;color:#333333; font-weight:normal;cursor:pointer;}
+            .menuList h5:hover{ float:left; line-height:55px;  display:block;  font-size:16px;  background:#f9f9f9;color:#333333; border-bottom:none;font-weight:normal;text-decoration:underline;cursor:pointer;}
+            .menuList h5:hover a{ width:155px;  float:left; line-height:55px;  display:block;  font-size:16px;  padding-left:50px;background:#f9f9f9;color: #a50303;font-weight:normal;cursor:pointer;}
+            .menuList h5:hover .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer; background:#f9f9f9;}
+            .menuList h5 a{line-height:55px; float:left; display:block; border-bottom:1px solid #eeeeee; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5 .imgspan{ display:inline-block; float:left;  width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;border-bottom:1px solid #eeeeee;}
+            .menuList h5.active{  line-height:55px;  display:block; border-bottom:1px solid #eeeeee; font-size:16px;  background:#f9f9f9; color:#002147;font-weight:normal; height:55px;}
+            .menuList h5.active a{line-height:55px; float:left; display:block; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5.active .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;}
+            .menuList .secondDiv{  width:240px; border-bottom:1px solid #eeeeee; padding:0px; background:#ffffff; height:auto; display:none;}
+            .menuList .secondDiv ul li{ width:185px; line-height:45px; height:45px;  display:block; font-size:14px;  padding-left:67px;  border-bottom:0px ; background:#ffffff;}
+            .menuList .secondDiv ul li.active{ text-decoration:none;color:#003262;font-weight:bold;}
+            .menuList .secondDiv ul li a{ color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+            .menuList .secondDiv ul li:hover{ width:185px; line-height:45px;  display:block; font-size:14px;  padding-left:67px;  text-decoration:underline;border-bottom:0px ; background:#f9f9f9;}
+            .menuList .secondDiv ul li:hover a{ color:#003262;color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+        </style>
+        <UL>
+            <div class="menuList">
+                <h5 class="active"><A href="xlzy.html">应用心理学</A><span class="imgspan">></span></h5>
+                <div class="clear"></div>
+            </div>
+            <div class="menuList">
+                <h5><A href="xqjy.html">学前教育</A><span class="imgspan">></span></h5>
+            </div>
+        </UL></div>
+    <div class="right">
+
+        <script language="javascript" src="/system/resource/js/dynclicks.js"></script>
+        <script language="javascript" src="/system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('null',1353264808,'wbnews','u8')</script>
+        <LINK href="/system/resource/style/component/news/content/format2.css" type="text/css" rel="stylesheet"><script>function seeContenta8(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta8('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
+        <script>_addDynClicks('wbnews',1353264808,4311)</script>
+        <div class="content">
+            <div class="zs_eng">
+
+                <h3 class="tit">学前教育专业</h3>
+            </div>
+            <div class="jjy_bt"></div>
+
+            <div class="info">
+                <div id="vsb_content_2_4311_u81"><div id="vsb_content_2" style="margin-bottom: 2em">
+                    <h4>学科介绍</h4>
+                    <div align="center">
+                        <table width="704" cellspacing="0" style="width: 704px; height: 268px;">
+                            <tbody>
+                            <tr class="firstRow" style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); padding: 0px 7px; border: 1px solid rgb(217, 217, 217); border-image: none;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">学科代码</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgb(217, 217, 217) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">040106</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">学科门类</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">教育学类</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">学科级别</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">二级学科（2020年度省级一流本科专业建设点）</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">修学年限</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">四年</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">学科级别</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">二级学科</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">授予学位</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">教育学学士</span></p></td>
+                            </tr>
+                            <tr style="height: 38px;">
+                                <td width="212" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px; border-style: none solid solid; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">主要课程</span></p></td>
+                                <td width="357" valign="center" style="background: rgb(242, 242, 242); border-width: 0px 1px 1px 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) rgb(217, 217, 217) rgb(217, 217, 217) rgb(0, 0, 0); padding: 0px 7px;"><p style="text-align: center; line-height: 150%; text-indent: 0px;"><span style="line-height: 150%; font-family: 宋体; font-size: 14px;">教育学、心理学导论、学前教育概论、学前儿童发展科学、学前儿童卫生学、幼儿教师职业道德、学前教育史、幼儿园游戏理论与实践、幼儿园课程、学前教育研究方法、幼儿文学、音乐、学前儿童五领域教育、幼儿园教育活动设计与组织实践、幼儿园环境创设与玩教具制作、综合艺术实践等。</span></p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <h4>培养目标</h4>
+                    <p class="vsbcontent_start" style="text-align: justify;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp培养适应我国学前事业发展和地方经济发展需要，具备学前教育专业核心素养，能胜任学前教育教师和管理岗位以及儿童发展相关领域工作，具有自主学习能力和创新精神的应用型人才；培养德、智、体、美全面发展的，能在托幼机构从事保教、管理及研究工作，具有创新精神和实践能力，适应现代学前教育改革与发展需要的师资。</p>
+
+                </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-4 footer-logo">
+                <a href="index.html"><img src="images/logo2.jpg" alt="logo"/></a>
+            </div>
+            <div class="col-md-4 recent-posts">
+                <div class="recent-posts-text">
+                    <p>专题栏目</p>
+                    <p>吕梁学院教育系</p>
+                    <p>公众号</p>
+                    <img src="images/gzh.png" alt="logo"/>
+                </div>
+            </div>
+            <div class="col-md-4 recent-posta" id="spad">
+                <div class="recent-posts-text" id="rpts">
+                    <h4 style="color: #f1edff">友情链接</h4>
+                    <h5><a href="http://www.moe.gov.cn/"><span style="color: #f1edff">中华人民共和国教育部</span></a></h5>
+                    <h5><a href="http://jyt.shanxi.gov.cn/"><span style="color: #f1edff">山西省教育厅</span></a></h5>
+                    <h5><a href="https://www.chsi.com.cn/"><span style="color: #f1edff">中国高等教育学生信息网</span></a></h5>
+                    <h5><a href="http://yingyong.chinaedu.edu.cn/"><span style="color: #f1edff">中国教育信息网</span></a></h5>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//footer-->
+<div class="copyright">
+    <ul class="list-paddingleft-2">
+        <li style="list-style: none;">
+            <p>版权所有：吕梁学院教育系学前教育&nbsp&nbsp&nbsp&nbsp周玫 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地址：吕梁市离石区文化路102号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮编：033000</p>
+        </li>
+    </ul>
+</div>
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+</body>
+</html>

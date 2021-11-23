@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <title>吕梁学院教育系首页</title>
+        <link href="css/style1.css" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+</head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="header-logo">
+                <!--此处加logo-->
+                <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-header">
+            </div>
+            <div class="top-nav">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="index.html">
+                            <p>首页</p>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <p>系部概况</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="general.html">系部简介</a></li>
+                            <li><a href="xbhj.html">系部环境</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <p>专业设置</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="xlzy.html">应用心理学专业</a></li>
+                            <li><a href="xqjy.html">学前教育专业</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="teacher.html">
+                            <p>师资队伍</p>
+                        </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <p>党建工作</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.dangjian.cn/">党建网</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <p>招生就业</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="zsqk.html">招生情况</a></li>
+                            <li><a href="jyfx.html">就业方向</a></li>
+                            <li><a href="https://zsjyc.llu.edu.cn/zssy/sy.htm">招生信息网</a></li>
+                            <li><a href="https://llu.jysd.com/">就业信息网</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/1.jpg" style="height: 500px;" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="images/2.jpg" style="height: 500px;" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" style="height: 500px;" alt="Third slide">
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    </div>
+    <script>
+        $(function () {
+            // 初始化轮播
+            $(".start-slide").click(function () {
+                $("#myCarousel").carousel('cycle');
+            });
+            // 停止轮播
+            $(".pause-slide").click(function () {
+                $("#myCarousel").carousel('pause');
+            });
+            // 循环轮播到上一个项目
+            $(".prev-slide").click(function () {
+                $("#myCarousel").carousel('prev');
+            });
+            // 循环轮播到下一个项目
+            $(".next-slide").click(function () {
+                $("#myCarousel").carousel('next');
+            });
+            // 循环轮播到某个特定的帧
+            $(".slide-one").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".slide-two").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".slide-three").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+        });
+        $(function () {
+            // 初始化轮播
+            $(".start-slide").click(function () {
+                $("#myCarousel1").carousel('cycle');
+            });
+            // 停止轮播
+            $(".pause-slide").click(function () {
+                $("#myCarousel1").carousel('pause');
+            });
+            // 循环轮播到上一个项目
+            $(".prev-slide").click(function () {
+                $("#myCarousel1").carousel('prev');
+            });
+            // 循环轮播到下一个项目
+            $(".next-slide").click(function () {
+                $("#myCarousel1").carousel('next');
+            });
+            // 循环轮播到某个特定的帧
+            $(".slide-one").click(function () {
+                $("#myCarousel1").carousel(0);
+            });
+            $(".slide-two").click(function () {
+                $("#myCarousel1").carousel(1);
+            });
+            $(".slide-three").click(function () {
+                $("#myCarousel1").carousel(2);
+            });
+        });
+
+    </script>
+    <script>
+        Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        setInterval("da=document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 content">
+                <h1 style="font-size: 22px">校园新闻</h1>
+                <div class="div1">
+                    <div>
+                        <div id="myCarousel1" class="carousel slide">
+                            <!-- 轮播（Carousel）指标 -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                                <li data-target="#myCarousel1" data-slide-to="3"></li>
+                            </ol>
+                            <!-- 轮播（Carousel）项目 -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/xymj2.jpg" style="height:280px" alt="First slide">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/xymj.jpg" style="height:280px" alt="Second slide">
+                                </div>
+                                <div class="item">
+                                    <img src="images/xymj1.jpg" style="height:280px" alt="Third slide">
+                                </div>
+                                <div class="item">
+                                    <img src="images/xymj3.jpg" style="height:280px" alt="Third slide">
+                                </div>
+                            </div>
+                            <!-- 轮播（Carousel）导航 -->
+                            <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div style="font-size: 12px;"></div>
+                    </div>
+                    <div class="right">
+                        <div class="item">
+                            <a href="ni/xyxw1.html">
+                                <p>11-19</p>
+                                <p>吕梁学院党委中心举行第24次集体学习</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/xyxw2.html">
+                                <p>11-18</p>
+                                <p>吕梁台：深入学习宣传贯彻党的十九届三中全会精神新闻 肩负时代重任 投身强国伟业</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/xyxw3.html">
+                                <p>11-18</p>
+                                <p>习近平：关于《中共中央关于党的百年奋斗重大成就和历史经验的决议》的说明</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/xyxw4.html">
+                                <p>11-17</p>
+                                <p>吕梁学院举办大学生就业体验周</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/xyxw5.html">
+                                <p>11-16</p>
+                                <p>智慧校园建设推进会暨协同办公OA系统上线培训会议</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/xyxw6.html">
+                                <p>11-15</p>
+                                <p>吕梁学院党政印发《吕梁学院创建绿色节约型校园实施意见》</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="colt">
+                <h1 style="font-size: 22px">通知公告</h1>
+                <!-- <img src="images/yzhy.png" style="height: 80%;width: 80%" /> -->
+                <div class="div2">
+                    <div class="header">
+                        <div class="left">当前时间</div>
+                        <p id="dateTime" style="font-size: 22px"></p>
+                    </div>
+                    <div class="_content">
+                        <div class="item">
+                            <a href="ni/tzgg1.html">
+                                <p>11-6</p>
+                                <p>接省教育厅通知，组织我校师生参加全省第三届职业技能大赛</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/tzgg2.html">
+                                <p>11-5</p>
+                                <p>学校疫情防控落实事项</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/tzgg3.html">
+                                <p>11-3</p>
+                                <p>召开了吕梁学院本科生全员导师制专题会议并进行了部署</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/tzgg4.html">
+                                <p>11-12</p>
+                                <p>企业微信故障报修平台已经对全校学生授权开放</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="ni/tzgg5.html">
+                                <p>11-16</p>
+                                <p>表扬学生主动咨询生活中遇到的困惑</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-4 footer-logo">
+                    <a href="index.html"><img src="images/logo2.jpg" alt="logo" /></a>
+                </div>
+                <div class="col-md-4 recent-posts">
+                    <div class="recent-posts-text">
+                        <p>专题栏目</p>
+                        <p>吕梁学院教育系</p>
+                        <p>公众号</p>
+                        <img src="images/gzh.png" alt="logo" />
+                    </div>
+                </div>
+                <div class="col-md-4 recent-posta" id="spad">
+                    <div class="recent-posts-text" id="rpts">
+                        <h4 style="color: #f1edff">友情链接</h4>
+                        <h5><a href="http://www.moe.gov.cn/"><span style="color: #f1edff">中华人民共和国教育部</span></a></h5>
+                        <h5><a href="http://jyt.shanxi.gov.cn/"><span style="color: #f1edff">山西省教育厅</span></a></h5>
+                        <h5><a href="https://www.chsi.com.cn/"><span style="color: #f1edff">中国高等教育学生信息网</span></a></h5>
+                        <h5><a href="http://yingyong.chinaedu.edu.cn/"><span style="color: #f1edff">中国教育信息网</span></a></h5>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->
+    <div class="copyright">
+        <ul class="list-paddingleft-2">
+            <li style="list-style: none;">
+                <p>版权所有：吕梁学院教育系学前教育&nbsp&nbsp&nbsp&nbsp周玫
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地址：吕梁市离石区文化路102号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮编：033000
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--smooth-scrolling-of-move-up-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+</body>
+
+</html>

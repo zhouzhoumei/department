@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>校园新闻1</title>
+        <link href="../css/style1.css" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+<div class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="header-logo">
+            <!--此处加logo-->
+            <a href="../index.html"><img src="../images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="navbar-header">
+        </div>
+        <div class="top-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="../index.html"><p>首页</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>系部概况</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../general.html">系部简介</a></li>
+                        <li><a href="../xbhj.html">系部环境</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>专业设置</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../xlzy.html">应用心理学专业</a></li>
+                        <li><a href="../xqjy.html">学前教育专业</a></li>
+                    </ul>
+                </li>
+                <li><a href="../teacher.html"><p>师资队伍</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>党建工作</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.dangjian.cn/">党建网</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>招生就业</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../zsqk.html">招生情况</a></li>
+                        <li><a href="../jyfx.html">就业方向</a></li>
+                        <li><a href="https://zsjyc.llu.edu.cn/zssy/sy.htm">招生信息网</a></li>
+                        <li><a href="https://llu.jysd.com/">就业信息网</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="list_bt">
+    <div class="lmmc">校园新闻</div>
+    <div class="dqwz">当前位置:
+        <a>首页</a>
+        >>
+        <a>校园新闻</a>
+    </div>
+</div>
+</div>
+<div class="list">
+    <div class="left"><script type="text/javascript">
+        $(function(){
+            $('.menuList').click(function(){
+                if($(this).find('.secondDiv').css('display')=='block'){
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideUp();
+                }
+                else{
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideDown();
+                    $(this).siblings().find('.secondDiv').slideUp();
+                }
+
+            })
+        })
+    </script>
+        <style type="text/css">
+            .menuList{ width:240px; height:auto; clear:both;}
+            .menuList h5{  line-height:55px;  display:block;  font-size:16px;background:#ffffff;color:#333333; font-weight:normal;cursor:pointer;}
+            .menuList h5:hover{ float:left; line-height:55px;  display:block;  font-size:16px;  background:#f9f9f9;color:#333333; border-bottom:none;font-weight:normal;text-decoration:underline;cursor:pointer;}
+            .menuList h5:hover a{ width:155px;  float:left; line-height:55px;  display:block;  font-size:16px;  padding-left:50px;background:#f9f9f9;color: #a50303;font-weight:normal;cursor:pointer;}
+            .menuList h5:hover .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer; background:#f9f9f9;}
+            .menuList h5 a{line-height:55px; float:left; display:block; border-bottom:1px solid #eeeeee; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5 .imgspan{ display:inline-block; float:left;  width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;border-bottom:1px solid #eeeeee;}
+            .menuList h5.active{  line-height:55px;  display:block; border-bottom:1px solid #eeeeee; font-size:16px;  background:#f9f9f9; color:#002147;font-weight:normal; height:55px;}
+            .menuList h5.active a{line-height:55px; float:left; display:block; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5.active .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;}
+            .menuList .secondDiv{  width:240px; border-bottom:1px solid #eeeeee; padding:0px; background:#ffffff; height:auto; display:none;}
+            .menuList .secondDiv ul li{ width:185px; line-height:45px; height:45px;  display:block; font-size:14px;  padding-left:67px;  border-bottom:0px ; background:#ffffff;}
+            .menuList .secondDiv ul li.active{ text-decoration:none;color:#003262;font-weight:bold;}
+            .menuList .secondDiv ul li a{ color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+            .menuList .secondDiv ul li:hover{ width:185px; line-height:45px;  display:block; font-size:14px;  padding-left:67px;  text-decoration:underline;border-bottom:0px ; background:#f9f9f9;}
+            .menuList .secondDiv ul li:hover a{ color:#003262;color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+        </style>
+        <UL>
+            <div class="menuList">
+                <h5 class="active"><A href="xyxw1.html">校园新闻</A><span class="imgspan">></span></h5>
+                <div class="clear"></div>
+            </div>
+        </UL></div>
+    <div class="right">
+
+        <script language="javascript" src="/system/resource/js/dynclicks.js"></script>
+        <script language="javascript" src="/system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('null',1353264808,'wbnews','u8')</script>
+        <LINK href="/system/resource/style/component/news/content/format2.css" type="text/css" rel="stylesheet"><script>function seeContenta8(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta8('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
+        <script>_addDynClicks('wbnews',1353264808,4311)</script>
+        <div class="content">
+            <div class="zs_eng">
+                <h3 class="tit">2021年11月19日</h3>
+            </div>
+            <div class="jjy_bt"></div>
+
+            <div class="info">
+                <div id="vsb_content_2_4311_u81"><div id="vsb_content_2" style="margin-bottom: 2em">
+                    <h4 style="margin-left: 10em">吕梁学院党委中心组举行第24次集体学习</h4>
+                    <td><th>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp11月18日，吕梁学院党委中心组在办公楼三楼会议室举行第24次集体学习。学习主题是：中国共产党第十九届中央委员会第六次全体会议精神。党委书记周富国主持并作讲话。党委副书记、院长殷杰出席。党委理论中心组成员全体参加。会议印发了习近平《关于〈中共中央关于党的百年奋斗重大成就和历史经验的决议〉的说明》，《中国共产党第十九届中央委员会第六次全体会议公报》《中共中央关于党的百年奋斗重大成就和历史经验的决议》和4个党内法规等学习材料。</p>
+                </th>
+                        <th><p>
+                            <span style="font-size: 18px;font-weight: bold" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp周富国讲话指出，认真学习宣传深入贯彻党的十九届六中全会精神是当前和今后一个时期重要政治任务。</span>党的十九届六中全会审议通过《中共中央关于党的百年奋斗重大成就和历史经验的决议》，全面总结党的百年奋斗重大成就和历史经验，通篇饱含着厚重的历史积淀、闪耀着光辉的真理光芒，是一篇马克思主义纲领性文献。全会认为，总结党的百年奋斗重大成就和历史经验的“三个需要”，我们党的“两个确立”，中国共产党百年奋斗的“五大历史意义”，党领导人民进行伟大斗争历史经验的“十个坚持”，我们党要牢记的“一个根本问题”，我们党要做到的“四个必须”，立意高远，内涵丰富，高瞻远瞩，高屋建瓴，是我们要不断深化学习领会、深入贯彻的思想精华。
+                        </p></th>
+                        <th><p>
+                            <span style="font-size: 18px;font-weight: bold" >
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp他强调，深入学习贯彻六中全会精神，</span>要同学习贯彻习近平总书记“七一”重要讲话精神结合起来，同党史学习教育和学习新中国史、改革开放史、社会主义发展史结合起来，同深入学习宣传贯彻习近平总书记视察山西重要讲话精神结合起来，同学习贯彻山西省第十二次党代会精神结合起来。深入学习贯彻六中全会精神，要更加紧密地团结在以习近平同志为核心的党中央周围，深刻领悟党百年奋斗的宝贵经验；要更加自觉以习近平新时代中国特色社会主义思想武装头脑、指导实践，坚定不移把“两个确立”转化为做到“两个维护”的思想自觉、政治自觉、行动自觉；要更加自觉践行伟大建党精神，心怀“国之大者”，牢记党和人民赋予吕梁学院的光荣使命；要更加深入贯彻党的教育方针，坚持正确办学方向，大力弘扬爱国主义传统，落实好立德树人根本任务；要更加坚定和明确建设高水平应用型大学目标方向，牢记“弘毅行知”校训，弘扬吕梁精神，奏响高质量发展最强音，谱写吕梁学院高质量内涵式发展新篇章。
+                        </p></th>
+                        <th><p><span style="font-size: 18px;font-weight: bold" >
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp他指出，学习贯彻好党内法规是一项长期政治任务。</span>党的十八大以来，习近平总书记聆听时代声音，回应时代呼唤，始终与新时代同频共振，深入回答了新时代中国特色社会主义的总目标、总任务、总体布局、战略布局和发展方向、发展方式、发展动力、战略步骤、外部条件、政治保证等基本问题，并根据新的实践对政治、经济、科技、文化、教育、法治、民生、民族、宗教、社会、国防、安全、生态文明、外交、统一战线、党的建设作出了科学理论分析和政策指导。党中央制定的一系列党内法规贯穿了习近平新时代中国特色社会主义思想的要求，体现出新思想新理念新判断。我们要持续跟进深化学习党内法规，深入学习理解，深化把握领悟，用新思想新理念思考问题指导实践，在掌握新思想上先学深学，从做到“两个维护”出发做好贯彻执行。党委及其班子成员肩负贯彻执行党的基本路线、基本理论、基本方略重任，更要带头履行职责、担当使命，在履行管党治党、办学治校主体责任中把方向、管大局、作决策、抓班子、带队伍、保落实。</p>
+                            </p>
+                        </th>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-4 footer-logo">
+                <a href="../index.html"><img src="../images/logo2.jpg" alt="logo"/></a>
+            </div>
+            <div class="col-md-4 recent-posts">
+                <div class="recent-posts-text">
+                    <p>专题栏目</p>
+                    <p>吕梁学院教育系</p>
+                    <p>公众号</p>
+                    <img src="../images/gzh.png" alt="logo"/>
+                </div>
+            </div>
+            <div class="col-md-4 recent-posta" id="spad">
+                <div class="recent-posts-text" id="rpts">
+                    <h4 style="color: #f1edff">友情链接</h4>
+                    <h5><a href="http://www.moe.gov.cn/"><span style="color: #f1edff">中华人民共和国教育部</span></a></h5>
+                    <h5><a href="http://jyt.shanxi.gov.cn/"><span style="color: #f1edff">山西省教育厅</span></a></h5>
+                    <h5><a href="https://www.chsi.com.cn/"><span style="color: #f1edff">中国高等教育学生信息网</span></a></h5>
+                    <h5><a href="http://yingyong.chinaedu.edu.cn/"><span style="color: #f1edff">中国教育信息网</span></a></h5>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//footer-->
+<div class="copyright">
+    <ul class="list-paddingleft-2">
+        <li style="list-style: none;">
+            <p>版权所有：吕梁学院教育系学前教育&nbsp&nbsp&nbsp&nbsp周玫 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地址：吕梁市离石区文化路102号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮编：033000</p>
+        </li>
+    </ul>
+</div>
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+</body>
+</html>

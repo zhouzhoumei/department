@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>校园新闻5</title>
+        <link href="../css/style1.css" type="text/css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+<div class="navbar navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="header-logo">
+            <!--此处加logo-->
+            <a href="../index.html"><img src="../images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="navbar-header">
+        </div>
+        <div class="top-nav">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="../index.html"><p>首页</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>系部概况</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../general.html">系部简介</a></li>
+                        <li><a href="../xbhj.html">系部环境</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>专业设置</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../xlzy.html">应用心理学专业</a></li>
+                        <li><a href="../xqjy.html">学前教育专业</a></li>
+                    </ul>
+                </li>
+                <li><a href="../teacher.html"><p>师资队伍</p></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>党建工作</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.dangjian.cn/">党建网</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <p>招生就业</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../zsqk.html">招生情况</a></li>
+                        <li><a href="../jyfx.html">就业方向</a></li>
+                        <li><a href="https://zsjyc.llu.edu.cn/zssy/sy.htm">招生信息网</a></li>
+                        <li><a href="https://llu.jysd.com/">就业信息网</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="list_bt">
+    <div class="lmmc">校园新闻</div>
+    <div class="dqwz">当前位置:
+        <a>首页</a>
+        >>
+        <a>校园新闻</a>
+    </div>
+</div>
+</div>
+<div class="list">
+    <div class="left"><script type="text/javascript">
+        $(function(){
+            $('.menuList').click(function(){
+                if($(this).find('.secondDiv').css('display')=='block'){
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideUp();
+                }
+                else{
+                    $('.menuList').find('h5').removeClass('active');
+                    $(this).find('h5').addClass('active');
+                    $(this).find('.secondDiv').slideDown();
+                    $(this).siblings().find('.secondDiv').slideUp();
+                }
+
+            })
+        })
+    </script>
+        <style type="text/css">
+            .menuList{ width:240px; height:auto; clear:both;}
+            .menuList h5{  line-height:55px;  display:block;  font-size:16px;background:#ffffff;color:#333333; font-weight:normal;cursor:pointer;}
+            .menuList h5:hover{ float:left; line-height:55px;  display:block;  font-size:16px;  background:#f9f9f9;color:#333333; border-bottom:none;font-weight:normal;text-decoration:underline;cursor:pointer;}
+            .menuList h5:hover a{ width:155px;  float:left; line-height:55px;  display:block;  font-size:16px;  padding-left:50px;background:#f9f9f9;color: #a50303;font-weight:normal;cursor:pointer;}
+            .menuList h5:hover .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer; background:#f9f9f9;}
+            .menuList h5 a{line-height:55px; float:left; display:block; border-bottom:1px solid #eeeeee; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5 .imgspan{ display:inline-block; float:left;  width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;border-bottom:1px solid #eeeeee;}
+            .menuList h5.active{  line-height:55px;  display:block; border-bottom:1px solid #eeeeee; font-size:16px;  background:#f9f9f9; color:#002147;font-weight:normal; height:55px;}
+            .menuList h5.active a{line-height:55px; float:left; display:block; height:55px;color:#333333;width:155px;padding-left:50px;}
+            .menuList h5.active .imgspan{ display:inline-block; float:left; width:35px; font-size:20px; color:#aaaaaa; cursor:pointer;}
+            .menuList .secondDiv{  width:240px; border-bottom:1px solid #eeeeee; padding:0px; background:#ffffff; height:auto; display:none;}
+            .menuList .secondDiv ul li{ width:185px; line-height:45px; height:45px;  display:block; font-size:14px;  padding-left:67px;  border-bottom:0px ; background:#ffffff;}
+            .menuList .secondDiv ul li.active{ text-decoration:none;color:#003262;font-weight:bold;}
+            .menuList .secondDiv ul li a{ color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+            .menuList .secondDiv ul li:hover{ width:185px; line-height:45px;  display:block; font-size:14px;  padding-left:67px;  text-decoration:underline;border-bottom:0px ; background:#f9f9f9;}
+            .menuList .secondDiv ul li:hover a{ color:#003262;color:#333333;width:185px; line-height:45px; height:45px; display:block;}
+        </style>
+        <UL>
+            <div class="menuList">
+                <h5 class="active"><A href="xyxw5.html">校园新闻</A><span class="imgspan">></span></h5>
+                <div class="clear"></div>
+            </div>
+        </UL></div>
+    <div class="right">
+
+        <script language="javascript" src="/system/resource/js/dynclicks.js"></script>
+        <script language="javascript" src="/system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('null',1353264808,'wbnews','u8')</script>
+        <LINK href="/system/resource/style/component/news/content/format2.css" type="text/css" rel="stylesheet"><script>function seeContenta8(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta8('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
+        <script>_addDynClicks('wbnews',1353264808,4311)</script>
+        <div class="content">
+            <div class="zs_eng">
+                <h3 class="tit">2021年11月16日</h3>
+            </div>
+            <div class="jjy_bt"></div>
+
+            <div class="info">
+                <div id="vsb_content_2_4311_u81"><div id="vsb_content_2" style="margin-bottom: 2em">
+                    <h4 style="margin-left: 9em">智慧校园建设推进会暨协同办公OA系统上线培训会议</h4>
+                    <td>
+                    <th><p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp11月16日下午，我校召开智慧校园建设推进会暨OA办公系统培训会议，副院长谭英杰、学校正处级全体干部参加会议，会议由谭英杰副院长主持。</p>
+                    </th>
+                    <th><img src="xw10.jpg" style="margin-left: 7em"></th>
+                    <th><img src="xw11.jpg" style="margin-left: 7em;margin-top: 1em;margin-bottom: 1em"></th>
+                    <th><p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp谭英杰指出协同办公平台是学校智慧校园建设的重要组成部分，是完善办公条件、优化业务流程的重要载体。为大家提供随时随地的计算机端和移动端协同办公环境，要求全校师生，特别是正处级领导要提高认识，落实责任，认真学习、要尽快转变工作方式，推进协同办公系统广泛使用，确保协同办公系统平稳运行，在提高管理水平、提高服务能力、提高工作效率上发挥更大的作用。</p>
+                    </th>
+                    <th>
+                        <img src="xw12.jpg" style="margin-left: 7em;margin-bottom: 1em">
+                    </th>
+                    <th><p>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp信息化与现代教育技术中心李月平同志就学校智慧校园核心平台、应用系统的建设内容、建设进展以及上线计划进行了通报。开发单位技术人员就OA系统的主要功能和操作使用进行了讲解。</p>
+                    </th>
+                    <th><img src="xw13.jpg" style="margin-left: 7em">
+                    </th>
+                    </td>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-4 footer-logo">
+                <a href="../index.html"><img src="../images/logo2.jpg" alt="logo"/></a>
+            </div>
+            <div class="col-md-4 recent-posts">
+                <div class="recent-posts-text">
+                    <p>专题栏目</p>
+                    <p>吕梁学院教育系</p>
+                    <p>公众号</p>
+                    <img src="../images/gzh.png" alt="logo"/>
+                </div>
+            </div>
+            <div class="col-md-4 recent-posta" id="spad">
+                <div class="recent-posts-text" id="rpts">
+                    <h4 style="color: #f1edff">友情链接</h4>
+                    <h5><a href="http://www.moe.gov.cn/"><span style="color: #f1edff">中华人民共和国教育部</span></a></h5>
+                    <h5><a href="http://jyt.shanxi.gov.cn/"><span style="color: #f1edff">山西省教育厅</span></a></h5>
+                    <h5><a href="https://www.chsi.com.cn/"><span style="color: #f1edff">中国高等教育学生信息网</span></a></h5>
+                    <h5><a href="http://yingyong.chinaedu.edu.cn/"><span style="color: #f1edff">中国教育信息网</span></a></h5>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//footer-->
+<div class="copyright">
+    <ul class="list-paddingleft-2">
+        <li style="list-style: none;">
+            <p>版权所有：吕梁学院教育系学前教育&nbsp&nbsp&nbsp&nbsp周玫 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp地址：吕梁市离石区文化路102号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮编：033000</p>
+        </li>
+    </ul>
+</div>
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+</body>
+</html>
